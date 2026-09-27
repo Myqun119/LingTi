@@ -1,0 +1,54 @@
+page {
+  background: #f7f8fa;
+  color: #1f2937;
+  font-size: 28rpx;
+}
+
+.page {
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 24rpx;
+}
+
+.section {
+  margin-top: 24rpx;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16rpx;
+}
+
+.section-title text:first-child {
+  font-size: 36rpx;
+  font-weight: 700;
+}
+
+.card {
+  background: #fff;
+  border-radius: 24rpx;
+  padding: 24rpx;
+  box-shadow: 0 10rpx 30rpx rgba(15, 23, 42, 0.06);
+}
+
+.muted {
+  color: #6b7280;
+}
+
+.primary {
+  color: #ef4444;
+}
+
+.btn-row {
+  display: flex;
+  gap: 16rpx;
+  flex-wrap: wrap;
+}
+
+.pill {
+  padding: 12rpx 20rpx;
+  border-radius: 999rpx;
+  background: #f3f4f6;
+}

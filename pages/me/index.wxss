@@ -1,0 +1,143 @@
+.me-page {
+  padding-bottom: 40rpx;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18rpx;
+}
+
+.profile-main {
+  display: flex;
+  align-items: center;
+  gap: 18rpx;
+}
+
+.avatar {
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ef4444, #f97316);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34rpx;
+  font-weight: 700;
+}
+
+.profile-meta {
+  display: grid;
+  gap: 6rpx;
+}
+
+.profile-name {
+  font-size: 32rpx;
+  font-weight: 700;
+}
+
+.stats-card,
+.section-card {
+  margin-top: 24rpx;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16rpx;
+  margin-top: 12rpx;
+}
+
+.stat-item {
+  background: #f9fafb;
+  border-radius: 18rpx;
+  padding: 18rpx 14rpx;
+  text-align: center;
+}
+
+.stat-label {
+  color: #6b7280;
+  font-size: 24rpx;
+}
+
+.stat-value {
+  margin-top: 12rpx;
+  font-size: 34rpx;
+  font-weight: 700;
+}
+
+.progress-bar {
+  margin-top: 12rpx;
+  width: 100%;
+  height: 10rpx;
+  border-radius: 999rpx;
+  background: #e5e7eb;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 999rpx;
+  background: linear-gradient(90deg, #ef4444, #f59e0b);
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16rpx;
+  margin-top: 12rpx;
+}
+
+.event-item {
+  background: #f9fafb;
+  border-radius: 18rpx;
+  padding: 18rpx 16rpx;
+  display: grid;
+  gap: 10rpx;
+}
+
+.event-icon {
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 12rpx;
+  background: #fff1f2;
+  color: #ef4444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.event-title {
+  font-weight: 700;
+}
+
+.event-value {
+  color: #6b7280;
+  font-size: 24rpx;
+}
+
+.menu-list {
+  display: grid;
+  gap: 12rpx;
+  padding: 24rpx;
+}
+
+.compact-list {
+  padding: 12rpx 0 0;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx;
+  border-radius: 18rpx;
+  background: #f9fafb;
+}
+
+.menu-title {
+  font-weight: 700;
+}

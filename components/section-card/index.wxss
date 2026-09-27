@@ -1,0 +1,19 @@
+.wrap {
+  padding: 0;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24rpx 24rpx 0;
+}
+
+.title {
+  font-size: 32rpx;
+  font-weight: 700;
+}
+
+.action {
+  font-size: 24rpx;
+}

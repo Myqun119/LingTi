@@ -1,0 +1,15 @@
+<view class="page">
+  <view class="card">
+    <view class="section-title">
+      <text>我的订单</text>
+      <text class="muted">商城交易记录</text>
+    </view>
+    <view class="record-list">
+      <view class="record-item" wx:for="{{orders}}" wx:key="title">
+        <view class="record-title">{{item.title}}</view>
+        <view class="muted">￥{{item.price}}</view>
+        <text class="primary">{{item.status}}</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,13 @@
+<view class="page">
+  <view class="card">
+    <view class="section-title">
+      <text>{{detail.title}}</text>
+      <text class="muted">{{detail.date}}</text>
+    </view>
+    <view>{{detail.content}}</view>
+    <view class="btn-row section">
+      <button>收藏</button>
+      <button type="primary">分享</button>
+    </view>
+  </view>
+</view>

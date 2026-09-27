@@ -1,0 +1,47 @@
+.auth-card {
+  display: grid;
+  gap: 20rpx;
+}
+
+.auth-panel {
+  display: grid;
+  gap: 16rpx;
+  padding: 20rpx;
+  background: #f9fafb;
+  border-radius: 20rpx;
+}
+
+.panel-title {
+  font-weight: 700;
+}
+
+.auth-panel input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 18rpx 20rpx;
+  border-radius: 16rpx;
+  background: #fff;
+}
+
+.agree-row {
+  display: flex;
+  align-items: center;
+  gap: 14rpx;
+}
+
+.check-box {
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 8rpx;
+  border: 2rpx solid #d1d5db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #dc2626;
+  font-size: 22rpx;
+}
+
+.checked {
+  background: #fee2e2;
+  border-color: #ef4444;
+}

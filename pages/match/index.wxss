@@ -1,0 +1,42 @@
+.search-box {
+  margin-top: 18rpx;
+  padding: 18rpx 20rpx;
+  border-radius: 18rpx;
+  background: #f9fafb;
+}
+
+.search-box input {
+  width: 100%;
+}
+
+.list {
+  display: grid;
+  gap: 18rpx;
+  margin-top: 20rpx;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.match-title {
+  font-size: 32rpx;
+  font-weight: 700;
+}
+
+.status {
+  color: #dc2626;
+  font-size: 24rpx;
+}
+
+.match-price {
+  margin-top: 12rpx;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.meta-row {
+  margin-top: 12rpx;
+}

@@ -1,0 +1,15 @@
+.record-list {
+  display: grid;
+  gap: 16rpx;
+}
+
+.record-item {
+  padding: 20rpx;
+  border-radius: 18rpx;
+  background: #f9fafb;
+}
+
+.record-title {
+  font-weight: 700;
+  margin-bottom: 8rpx;
+}

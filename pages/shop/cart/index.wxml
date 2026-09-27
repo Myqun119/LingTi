@@ -1,0 +1,31 @@
+<view class="page">
+  <view class="card">
+    <view class="section-title">
+      <text>购物车</text>
+      <text class="muted">共 {{totalCount}} 件</text>
+    </view>
+
+    <view class="cart-list">
+      <view class="cart-item" wx:for="{{items}}" wx:key="id">
+        <view class="cart-main">
+          <view class="cart-title">{{item.title}}</view>
+          <view class="muted">规格：{{item.spec}}</view>
+          <view class="price">￥{{item.price}}</view>
+        </view>
+        <view class="cart-actions">
+          <view class="stepper">
+            <button size="mini" data-index="{{index}}" data-action="minus" bindtap="changeCount">-</button>
+            <text>{{item.count}}</text>
+            <button size="mini" data-index="{{index}}" data-action="plus" bindtap="changeCount">+</button>
+          </view>
+          <text class="remove" data-index="{{index}}" bindtap="removeItem">删除</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="summary">
+      <text>合计：{{totalPrice}} 元</text>
+      <button type="primary" bindtap="checkout">去结算</button>
+    </view>
+  </view>
+</view>

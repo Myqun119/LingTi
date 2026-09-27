@@ -1,0 +1,10 @@
+{
+    "name": "lingti-mini-program",
+    "version": "1.0.0",
+    "private": true,
+    "description": "灵缇互娱微信小程序原型工程",
+    "scripts": {
+        "lint": "echo \"No lint configured yet\"",
+        "dev": "echo \"Open this project in WeChat DevTools from VS Code\""
+    }
+}

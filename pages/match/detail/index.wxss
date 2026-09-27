@@ -1,0 +1,26 @@
+.section {
+  margin-top: 18rpx;
+}
+
+.signup-form {
+  display: grid;
+  gap: 16rpx;
+}
+
+.signup-form input,
+.signup-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 18rpx 20rpx;
+  border-radius: 16rpx;
+  background: #f9fafb;
+}
+
+.signup-form textarea {
+  min-height: 150rpx;
+}
+
+.form-title {
+  font-weight: 700;
+  margin-bottom: 4rpx;
+}

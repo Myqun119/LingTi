@@ -1,0 +1,86 @@
+.home-page {
+  padding-bottom: 40rpx;
+}
+
+.hero {
+  background: linear-gradient(135deg, #dc2626, #fb7185);
+  color: #fff;
+}
+
+.hero-title {
+  font-size: 42rpx;
+  font-weight: 800;
+}
+
+.hero-subtitle {
+  margin-top: 12rpx;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.hero-actions {
+  margin-top: 20rpx;
+}
+
+.hero-actions button {
+  border-radius: 999rpx;
+}
+
+.list {
+  display: grid;
+  gap: 18rpx;
+  padding: 24rpx;
+}
+
+.list-item,
+.goods-card {
+  background: #fff;
+  border-radius: 20rpx;
+  padding: 20rpx;
+  box-shadow: 0 4rpx 16rpx rgba(15, 23, 42, 0.05);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16rpx;
+}
+
+.item-title {
+  font-weight: 700;
+}
+
+.primary-pill {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.two-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.goods-tag {
+  display: inline-block;
+  padding: 6rpx 12rpx;
+  background: #fff7ed;
+  color: #f97316;
+  border-radius: 999rpx;
+  font-size: 22rpx;
+}
+
+.goods-title {
+  margin-top: 14rpx;
+  font-weight: 700;
+}
+
+.goods-desc {
+  margin-top: 10rpx;
+  color: #6b7280;
+  font-size: 24rpx;
+}
+
+.goods-price {
+  margin-top: 14rpx;
+  color: #ef4444;
+  font-weight: 700;
+}

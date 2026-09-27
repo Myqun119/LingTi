@@ -1,0 +1,55 @@
+{
+    "pages": [
+        "pages/home/index",
+        "pages/match/index",
+        "pages/match/detail/index",
+        "pages/shop/index",
+        "pages/shop/detail/index",
+        "pages/shop/cart/index",
+        "pages/news/index",
+        "pages/news/detail/index",
+        "pages/me/index",
+        "pages/me/events/index",
+        "pages/me/orders/index",
+        "pages/me/tools/index",
+        "pages/auth/index"
+    ],
+    "window": {
+        "navigationBarTitleText": "灵缇互娱",
+        "navigationBarBackgroundColor": "#FFFFFF",
+        "navigationBarTextStyle": "black",
+        "backgroundColor": "#F7F8FA",
+        "backgroundTextStyle": "light"
+    },
+    "tabBar": {
+        "color": "#6b7280",
+        "selectedColor": "#ef4444",
+        "backgroundColor": "#ffffff",
+        "borderStyle": "black",
+        "list": [
+            {
+                "pagePath": "pages/home/index",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/match/index",
+                "text": "赛事"
+            },
+            {
+                "pagePath": "pages/shop/index",
+                "text": "商城"
+            },
+            {
+                "pagePath": "pages/news/index",
+                "text": "资讯"
+            },
+            {
+                "pagePath": "pages/me/index",
+                "text": "我的"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "entryPagePath": "pages/home/index"
+}

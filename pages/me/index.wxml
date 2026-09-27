@@ -1,0 +1,72 @@
+<view class="page me-page">
+  <view class="card profile-card">
+    <view class="profile-main">
+      <view class="avatar">灵</view>
+      <view class="profile-meta">
+        <view class="profile-name">{{user.nickname}}</view>
+        <view class="muted">{{user.level}}</view>
+      </view>
+    </view>
+    <button size="mini" type="primary" bindtap="openAuth">{{user.nickname === '点击登录' ? '点击登录' : '已登录'}}</button>
+  </view>
+
+  <view class="card stats-card">
+    <view class="section-title">
+      <text>数据看板</text>
+      <text class="muted">今日概览</text>
+    </view>
+    <view class="stats-grid">
+      <view class="stat-item" wx:for="{{stats}}" wx:key="label">
+        <view class="stat-label">{{item.label}}</view>
+        <view class="stat-value">{{item.value}}</view>
+        <view class="progress-bar">
+          <view class="progress" style="width: {{item.progress}}%"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="card section-card">
+    <view class="section-title">
+      <text>我的赛事中心</text>
+      <text class="muted">查看详情</text>
+    </view>
+    <view class="event-grid">
+      <view class="event-item" wx:for="{{myEvents}}" wx:key="title">
+        <view class="event-icon">{{item.icon}}</view>
+        <view class="event-title">{{item.title}}</view>
+        <view class="event-value">{{item.value}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="card section-card">
+    <view class="section-title">
+      <text>功能入口</text>
+      <text class="muted">常用服务</text>
+    </view>
+    <view class="menu-list">
+      <view class="menu-item" wx:for="{{features}}" wx:key="title" data-path="{{item.path}}" bindtap="openEntry">
+        <view>
+          <view class="menu-title">{{item.title}}</view>
+          <view class="muted">{{item.desc}}</view>
+        </view>
+        <text class="primary">></text>
+      </view>
+    </view>
+  </view>
+
+  <view class="section">
+    <section-card title="个人功能" actionText="全部">
+      <view class="menu-list compact-list">
+        <view class="menu-item" wx:for="{{dashboard}}" wx:key="title" data-path="{{item.path}}" bindtap="openEntry">
+          <view>
+            <view class="menu-title">{{item.title}}</view>
+            <view class="muted">{{item.desc}}</view>
+          </view>
+          <text class="primary">></text>
+        </view>
+      </view>
+    </section-card>
+  </view>
+</view>

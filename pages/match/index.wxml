@@ -1,0 +1,34 @@
+<view class="page">
+  <view class="card">
+    <view class="section-title">
+      <text>赛事中心</text>
+      <text class="muted">报名、赛程、结果</text>
+    </view>
+    <view class="search-box">
+      <input placeholder="搜索赛事名称、关键词" value="{{keyword}}" bindinput="onKeywordInput" />
+    </view>
+    <view class="btn-row">
+      <view class="pill" data-filter="all" bindtap="changeFilter">全部</view>
+      <view class="pill" data-filter="ongoing" bindtap="changeFilter">进行中</view>
+      <view class="pill" data-filter="signup" bindtap="changeFilter">报名中</view>
+      <view class="pill" data-filter="ended" bindtap="changeFilter">已结束</view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="list">
+      <view class="match-item card" wx:for="{{filteredMatches}}" wx:key="id" data-id="{{item.id}}" bindtap="openDetail">
+        <view class="row">
+          <text class="match-title">{{item.title}}</text>
+          <text class="status">{{item.status}}</text>
+        </view>
+        <view class="muted">{{item.time}} · {{item.venue}}</view>
+        <view class="muted">{{item.intro}}</view>
+        <view class="row meta-row">
+          <text class="match-price">{{item.fee}}</text>
+          <text class="muted">名额 {{item.quota}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

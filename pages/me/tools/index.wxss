@@ -1,0 +1,15 @@
+.tool-list {
+  display: grid;
+  gap: 16rpx;
+}
+
+.tool-item {
+  padding: 20rpx;
+  border-radius: 18rpx;
+  background: #f9fafb;
+}
+
+.tool-title {
+  font-weight: 700;
+  margin-bottom: 8rpx;
+}

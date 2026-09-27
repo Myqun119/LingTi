@@ -1,0 +1,28 @@
+<view class="page">
+  <view class="card">
+    <view class="section-title">
+      <text>商城</text>
+      <text class="muted" bindtap="openCart">购物车</text>
+    </view>
+    <view class="search-box">
+      <input placeholder="搜索商品名称、标签" value="{{keyword}}" bindinput="onKeywordInput" />
+    </view>
+    <view class="btn-row category-row">
+      <view class="pill" data-category="all" bindtap="changeCategory">全部</view>
+      <view class="pill" data-category="equipment" bindtap="changeCategory">装备</view>
+      <view class="pill" data-category="gift" bindtap="changeCategory">礼品</view>
+      <view class="pill" data-category="daily" bindtap="changeCategory">日用</view>
+    </view>
+    <view class="goods-list">
+      <view class="goods-item" wx:for="{{filteredGoods}}" wx:key="id" data-id="{{item.id}}" bindtap="openDetail">
+        <view class="goods-title">{{item.title}}</view>
+        <view class="muted">{{item.intro}}</view>
+        <view class="row">
+          <text class="price">￥{{item.price}}</text>
+          <text class="tag">{{item.tag}}</text>
+        </view>
+        <view class="muted stock">库存 {{item.stock}}</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,16 @@
+.news-list {
+  display: grid;
+  gap: 18rpx;
+}
+
+.news-item {
+  padding: 22rpx;
+  border-radius: 20rpx;
+  background: #f9fafb;
+}
+
+.news-title {
+  font-weight: 700;
+  font-size: 30rpx;
+  margin-bottom: 10rpx;
+}

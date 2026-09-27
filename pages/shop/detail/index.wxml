@@ -1,0 +1,24 @@
+<view class="page">
+  <view class="card">
+    <view class="section-title">
+      <text>{{detail.title}}</text>
+      <text class="primary">￥{{detail.price}}</text>
+    </view>
+    <view class="muted">{{detail.intro}}</view>
+    <view class="section muted">库存：{{detail.stock}}</view>
+    <view class="section muted">售后：{{detail.service}}</view>
+    <view class="section quantity-row">
+      <text class="muted">数量</text>
+      <view class="stepper">
+        <button size="mini" bindtap="decreaseQuantity">-</button>
+        <text>{{quantity}}</text>
+        <button size="mini" bindtap="increaseQuantity">+</button>
+      </view>
+    </view>
+    <view class="btn-row section">
+      <button bindtap="addToCart">加入购物车</button>
+      <button type="primary" bindtap="buyNow">立即购买</button>
+      <button bindtap="openCart">查看购物车</button>
+    </view>
+  </view>
+</view>

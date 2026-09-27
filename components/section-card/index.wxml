@@ -1,0 +1,7 @@
+<view class="wrap card">
+  <view class="head" wx:if="{{title || actionText}}">
+    <view class="title">{{title}}</view>
+    <view class="action primary" wx:if="{{actionText}}" bindtap="handleAction">{{actionText}}</view>
+  </view>
+  <slot></slot>
+</view>

@@ -1,0 +1,56 @@
+<view class="page home-page">
+  <view class="hero card">
+    <view class="hero-title">灵缇互娱</view>
+    <view class="hero-subtitle">赛事、商城、资讯与用户中心的一体化小程序入口</view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">
+      <text>快捷入口</text>
+      <text class="muted">主功能导航</text>
+    </view>
+    <stat-grid items="{{quickEntries}}" bind:select="onQuickSelect" />
+  </view>
+
+  <view class="section">
+    <section-card title="热门赛事" actionText="查看全部" bind:action="goMatchList">
+      <view class="list">
+        <view class="list-item" wx:for="{{featuredMatches}}" wx:key="id" data-id="{{item.id}}" bindtap="openMatch">
+          <view class="row">
+            <text class="item-title">{{item.title}}</text>
+            <text class="pill primary-pill">{{item.status}}</text>
+          </view>
+          <view class="muted">{{item.time}} · {{item.venue}}</view>
+          <view class="muted">{{item.intro}}</view>
+        </view>
+      </view>
+    </section-card>
+  </view>
+
+  <view class="section">
+    <section-card title="推荐商品" actionText="进入商城" bind:action="goShopList">
+      <view class="list two-col">
+        <view class="goods-card" wx:for="{{featuredGoods}}" wx:key="id" data-id="{{item.id}}" bindtap="openGoods">
+          <view class="goods-tag">{{item.tag}}</view>
+          <view class="goods-title">{{item.title}}</view>
+          <view class="goods-desc">{{item.intro}}</view>
+          <view class="goods-price">￥{{item.price}}</view>
+        </view>
+      </view>
+    </section-card>
+  </view>
+
+  <view class="section">
+    <section-card title="最新资讯" actionText="查看更多" bind:action="goNewsList">
+      <view class="list">
+        <view class="list-item" wx:for="{{featuredNews}}" wx:key="id" data-id="{{item.id}}" bindtap="openNews">
+          <view class="row">
+            <text class="item-title">{{item.title}}</text>
+            <text class="muted">{{item.date}}</text>
+          </view>
+          <view class="muted">{{item.intro}}</view>
+        </view>
+      </view>
+    </section-card>
+  </view>
+</view>
